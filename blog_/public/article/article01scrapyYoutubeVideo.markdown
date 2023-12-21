@@ -1,4 +1,4 @@
-### [使用selenium+youget批量下载Youtube视频](https://plusw.github.io/blog/#article/demo01scrapyYoutube)
+### [使用selenium+youget批量下载Youtube视频](https://plusw.github.io/blog/#article/article01scrapyYoutubeVideo)
 *Posted by plusw on December 17, 2023*  
     经常在youtube上听歌，在其他音乐平台很多需要版权，于是想把youtube上，我的播放列表里的歌曲全部下载。最近学习了爬虫，写了这个项目，用selenium爬取歌曲信息，使用you-get下载到本地。
 #### 正文
