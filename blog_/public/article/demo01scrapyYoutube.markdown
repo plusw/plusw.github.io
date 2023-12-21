@@ -1,4 +1,4 @@
-### [使用selenium+youget批量下载Youtube视频](https://example.com)
+### [使用selenium+youget批量下载Youtube视频](https://plusw.github.io/blog/#article/demo01scrapyYoutube)
 *Posted by plusw on December 17, 2023*  
     经常在youtube上听歌，于是想把youtube上，我的播放列表里的歌曲全部下载。
 用到了selenium爬取歌曲信息，使用you-get下载到本地。项目使用python,首先启动
