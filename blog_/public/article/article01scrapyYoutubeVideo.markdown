@@ -2,7 +2,12 @@
 *2023, 12.22*  
     经常在youtube上听歌，在其他音乐平台很多需要版权，于是想把youtube上，我的播放列表里的歌曲全部下载。最近学习了爬虫，写了这个项目，用selenium爬取歌曲信息，使用you-get下载到本地。
 ##### 简介
-项目使用python,首先安装chrome driver,安装对应版本的chrome。使用selenium控制chrome打开网页, 使用xpath定位歌曲元素，然后将歌曲信息字符串储存在本地csv文件。为了防止下载已经下载过的歌曲，在下载前对比本地mp3文件夹下的mp3，将已下载的做标记。 然后读取csv文件，使用you-get下载未标记的歌曲，下载后将mp4转为mp3。
+1.项目使用python,首先安装chrome driver,安装对应版本的chrome。
+2.使用selenium控制chrome打开网页, 使用xpath定位歌曲元素
+3.然后将歌曲信息字符串储存在本地csv文件。
+4.为了防止下载已经下载过的歌曲，在下载前对比本地mp3文件夹下的mp3，将已下载的做标记。 
+5.读取csv文件，使用you-get下载未标记的歌曲
+6.下载后将mp4转为mp3。
 ##### Issues
 you-get偶尔失败，原因:you-get使用多次会被Youtube检测出来，最好使用ip代理
 ##### Detail
@@ -24,7 +29,6 @@ sys.argv = ['you-get', '-o', outputPath, inputLink, "-O", outputName,"--debug"]
 you_get.main()
 ```
 ###### 5 完整代码
-这是完整代码:
 ```python
 import time
 import pandas as pd
