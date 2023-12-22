@@ -11,8 +11,7 @@
 ##### Issues
 you-get偶尔失败，原因:you-get使用多次会被Youtube检测出来，最好使用ip代理
 ##### Detail
-###### 1 首先安装selenium you-get python环境
-###### 2 初始化selenium
+###### 初始化selenium
 ```python
 options = Options()
 options.binary_location = "W:/chrome/chrome-win64/chrome.exe"  # 指定chrome路径
@@ -21,14 +20,13 @@ driver = webdriver.Chrome(service=path, options=options)
 website = "https://www.youtube.com/playlist?list=PLzq2u2o3_5PIETb3Lzhc83QL"
 driver.get(website)
 ```
-###### 3 xpath定位，储存在csv
-###### 4 you-get下载
+###### you-get下载
 ```python
 import you_get
 sys.argv = ['you-get', '-o', outputPath, inputLink, "-O", outputName,"--debug"]
 you_get.main()
 ```
-###### 5 完整代码
+###### 完整代码
 ```python
 import time
 import pandas as pd
