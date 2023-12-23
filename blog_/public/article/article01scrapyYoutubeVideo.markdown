@@ -8,9 +8,8 @@
 4.为了防止下载已经下载过的歌曲，在下载前对比本地mp3文件夹下的mp3，将已下载的做标记。   
 5.读取csv文件，使用you-get下载未标记的歌曲  
 6.下载后将mp4转为mp3。  
-##### Issues
-you-get偶尔失败，原因:you-get使用多次会被Youtube检测出来，最好使用ip代理
-##### Detail
+###### you-get偶尔失败
+原因:you-get使用多次会被Youtube检测出来，最好使用ip代理
 ###### 初始化selenium
 ```python
 options = Options()
