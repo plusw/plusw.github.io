@@ -1,16 +1,16 @@
 ### [使用selenium+youget批量下载Youtube视频](https://plusw.github.io/blog/#article/article01scrapyYoutubeVideo)
 *2023, 12.22*  
     经常在youtube上听歌，在其他音乐平台很多需要版权，于是想把youtube上，我的播放列表里的歌曲全部下载。最近学习了爬虫，写了这个项目，用selenium爬取歌曲信息，使用you-get下载到本地。  
-##### 简介
+##### **前言**
 1.项目使用python,首先安装chrome driver,安装对应版本的chrome。  
 2.使用selenium控制chrome打开网页, 使用xpath定位歌曲元素  
 3.然后将歌曲信息字符串储存在本地csv文件。  
 4.为了防止下载已经下载过的歌曲，在下载前对比本地mp3文件夹下的mp3，将已下载的做标记。   
 5.读取csv文件，使用you-get下载未标记的歌曲  
 6.下载后将mp4转为mp3。  
-###### you-get偶尔失败
+##### **you-get偶尔失败**
 原因:you-get使用多次会被Youtube检测出来，最好使用ip代理
-###### 初始化selenium
+##### **初始化selenium**
 ```python
 options = Options()
 options.binary_location = "W:/chrome/chrome-win64/chrome.exe"  # 指定chrome路径
@@ -19,13 +19,13 @@ driver = webdriver.Chrome(service=path, options=options)
 website = "https://www.youtube.com/playlist?list=PLzq2u2o3_5PIETb3Lzhc83QL"
 driver.get(website)
 ```
-###### you-get下载
+##### **you-get下载**
 ```python
 import you_get
 sys.argv = ['you-get', '-o', outputPath, inputLink, "-O", outputName,"--debug"]
 you_get.main()
 ```
-###### 完整代码
+###### **完整代码**
 ```python
 import time
 import pandas as pd
