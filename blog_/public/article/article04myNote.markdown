@@ -5,4 +5,18 @@
 ##### **前言**
 *全栈之路，出发!!*
 
- 
+ 1. 命令行创建vite+react前端项目  
+ npm create vite@latest
+
+ 2. java springboot application.properties 配置  
+```
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/数据库名
+spring.datasource.username=root
+spring.datasource.password=1234
+server.port=5173
+```
+3. lombok注解  
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
