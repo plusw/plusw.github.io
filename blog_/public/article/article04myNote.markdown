@@ -9,7 +9,7 @@
  npm create vite@latest
 
  2. java springboot application.properties 配置  
-```
+``` xml
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.url=jdbc:mysql://localhost:3306/数据库名
 spring.datasource.username=root
@@ -20,3 +20,5 @@ server.port=5173
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+4. windows cmd命令行停止nginx  
+tasklist | findstr "nginx"
