@@ -1,0 +1,23 @@
+{
+    "id": "chatcmpl-8nNn7LlpLnzpq1foaOiSS3q4g7cDZ",
+    "object": "chat.completion",
+    "created": 1706780217,
+    "model": "gpt-3.5-turbo-1106",
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "{\n\"word\":\"door\",\n\"meaning\":\"a hinged, sliding, or revolving barrier at the entrance to a building, room, or vehicle, or in the framework of a cupboard\",\n\"Chinese\":\"门\",\n\"sentense\":[\"Close the door, please.\", \"I knocked on the door but no one answered.\", \"The cat scratched at the door to be let in.\", \"She opened the door and stepped inside.\", \"The door creaked as it swung open.\"]\n}"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 206,
+        "completion_tokens": 97,
+        "total_tokens": 303
+    },
+    "system_fingerprint": "fp_04f9a1eebf"
+}

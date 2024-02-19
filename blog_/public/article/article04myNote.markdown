@@ -20,5 +20,6 @@ server.port=5173
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-4. windows cmd命令行停止nginx  
-tasklist | findstr "nginx"
+4. windows cmd命令行nginx  
+查看进程  tasklist | findstr "nginx"  
+停止进程  taskkill /f /t /im nginx.exe

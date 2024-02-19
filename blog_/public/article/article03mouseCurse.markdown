@@ -3,7 +3,7 @@
     可以改变默认的鼠标样式，比如说把白色箭头改为游戏里的图标。在windows里可以直接在设置里改。在前端网页上可以使用.cur静态图标，也可以使用.ani动态鼠标。
 
 ##### **前言**
-在windows上改鼠标样式很简单，打开设置，搜索鼠标设定直接改。支持静态和动态鼠标样式。
+在windows上改鼠标样式很简单，打开设置，搜索鼠标设定直接改。支持静态和动态鼠标样式。在前端页面上也可以用炫酷的鼠标箭头效果。
 ##### **一.更改网页上的静态鼠标样式.cur**
  css支持更改静态鼠标样式.cur图标，可以在CSS文件里直接加上.
  ```css
@@ -13,7 +13,7 @@
  ```
  上面这行代码表示 用mouse.cur作为鼠标，如果有问题则使用default默认鼠标。
  ##### **二.使用动态鼠标样式.ani文件**
-css不支持动态鼠标样式.cur图标，[在网上找到一个库支持.ani](https://www.npmjs.com/package/ani-cursor),感谢国外大神。
+css不支持动态鼠标样式.ani图标，[在网上找到一个库支持.ani](https://www.npmjs.com/package/ani-cursor),感谢国外大神提供的库。
 [原文点这里](https://github.com/captbaritone/webamp/tree/master/packages/ani-cursor)  
 首先安装依赖 ani-cursor  
 ```bash
@@ -63,5 +63,5 @@ applyCursor(
     "https://plusw.github.io/blog_/public/source/1.ani"
 );
 ```
-项目要启动服务运行，直接双击运行不了。  可以使用Parcel启动服务，也可以用react等等  
+项目要启动web服务运行。  可以使用Parcel启动服务，也可以用vite等等  
 这里推荐一个[下载.cur和.ani的网站](https://www.cursors-4u.com/mmorpg/)  
