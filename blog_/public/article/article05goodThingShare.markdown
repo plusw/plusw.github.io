@@ -1,4 +1,4 @@
-### [分享一些工具等等](https://plusw.github.io/blog/#article/article04myNote)
+### [分享一些工具等等](https://plusw.github.io/blog/#article/article05goodThingShare)
 *2024,01.31*  
     分享一些工具等等。
 
