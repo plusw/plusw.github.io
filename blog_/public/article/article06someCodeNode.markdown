@@ -1,4 +1,4 @@
-### [My笔记](https://plusw.github.io/blog/#article/article06someCodeNode)
+### [数据结构和算法](https://plusw.github.io/blog/#article/article06someCodeNode)
 *2024,02.19*  
     我的个人code笔记
 
